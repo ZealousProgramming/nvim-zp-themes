@@ -1,6 +1,7 @@
 
 "AUTHOR: Devon McKenzie
 "SCRIPT: https://github.com/ZealousProgramming/nvim-zp-themes/ghoul.vim
+"VERSION: v1.1
 "
 "UPDATED: Feburary 12th, 2024
 "-----------------
@@ -25,27 +26,15 @@
 "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 "THE SOFTWARE.
 "-----------------
-"CHANGES: Initial creation
+"CHANGES: Warning Message Color
 "
 
 " colorscheme ghoul
-"
-"DARKER GRAY
-"let g:ghoul_lighter_gray = 1
-"colorscheme ghoul
-"
+
 "DARKEST GRAY
 " let g:ghoul_gray = 1
 " colorscheme ghoul
 
-"ALMOST BLACK
-"let g:ghoul_lighter_black = 1
-"colorscheme ghoul
-"
-"BLACK
-"let g:ghoul_black = 1
-"colorscheme ghoul
-"
 "GHOUL:
 set background=dark
 
@@ -60,11 +49,10 @@ if !exists("g:ghoul_gray")
 	let g:ghoul_gray = 0
 endif
 
-" let c_teal=#6ef8be
-
-
+" #6ef8be
 " #F5DA23
 " #dfaf00
+" #ff875f
 
 "COMMON COLORS AND SETTINGS
 highlight PreProc guifg=#6ef8be guibg=NONE gui=NONE ctermfg=173 ctermbg=NONE cterm=NONE
@@ -131,7 +119,7 @@ highlight Search guifg=#6ef8be guibg=NONE gui=reverse ctermfg=178 ctermbg=NONE c
 highlight MatchParen guifg=#87afaf guibg=NONE gui=reverse ctermfg=109 ctermbg=NONE cterm=reverse
 highlight Error guifg=#d75f5f guibg=#121212 gui=reverse ctermfg=167 ctermbg=233 cterm=reverse
 highlight ErrorMsg guifg=#d75f5f guibg=NONE gui=NONE ctermfg=167 ctermbg=NONE cterm=NONE
-highlight WarningMsg guifg=#ff875f guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
+highlight WarningMsg guifg=#6ef8be guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
 highlight netrwExe guifg=#5f8787 guibg=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
 highlight netrwlist guifg=#875f5f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight Directory guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
