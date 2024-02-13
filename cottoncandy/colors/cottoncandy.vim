@@ -1,9 +1,9 @@
 
 "AUTHOR: Devon McKenzie
-"SCRIPT: https://github.com/ZealousProgramming/nvim-zp-themes/ghoul/colors/ghoul.vim
-"VERSION: v1.1
+"SCRIPT: https://github.com/ZealousProgramming/nvim-zp-themes/cottoncandy/colors/cottoncandy.vim
+"VERSION: v1.0
 "
-"UPDATED: Feburary 12th, 2024
+"UPDATED: Feburary 13th, 2024
 "-----------------
 "LICENSE
 "Copyright (c) 2020 Devon McKenzie
@@ -26,14 +26,14 @@
 "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 "THE SOFTWARE.
 "-----------------
-"CHANGES: Warning Message Color
+"CHANGES: Initial
 "
 
-" colorscheme ghoul
+" colorscheme cottoncandy
 
 "DARKEST GRAY
-" let g:ghoul_gray = 1
-" colorscheme ghoul
+" let g:cottoncandy_gray = 1
+" colorscheme cottoncandy
 
 "GHOUL:
 set background=dark
@@ -43,26 +43,29 @@ highlight clear
 	syntax reset
 endif
 
-let g:colors_name="ghoul"
+let g:colors_name="cottoncandy"
 
-if !exists("g:ghoul_gray")
-	let g:ghoul_gray = 0
+if !exists("g:cottoncandy_gray")
+	let g:cottoncandy_gray = 0
 endif
 
 " #6ef8be
 " #F5DA23
 " #dfaf00
 " #ff875f
+" #EDAAFA
+" #FAAAF3
+" #FAAAD7
 
 "COMMON COLORS AND SETTINGS
-highlight PreProc guifg=#6ef8be guibg=NONE gui=NONE ctermfg=173 ctermbg=NONE cterm=NONE
-highlight Function guifg=#6ef8be guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE cterm=NONE
+highlight PreProc guifg=#A4E5F3 guibg=NONE gui=NONE ctermfg=173 ctermbg=NONE cterm=NONE
+highlight Function guifg=#FAAAD7 guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE cterm=NONE
 highlight Identifier guifg=#ffff guibg=NONE gui=NONE ctermfg=180 ctermbg=NONE cterm=NONE
 highlight Statement guifg=#ffff guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
 highlight Constant guifg=#ffff guibg=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
-highlight Type guifg=#6ef8be guibg=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
-highlight Keyword guifg=#6ef8be guibg=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
-highlight String guifg=#626262 guibg=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
+highlight Type guifg=#FAAAD7 guibg=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
+highlight Keyword guifg=#A4E5F3 guibg=NONE gui=NONE ctermfg=172 ctermbg=NONE cterm=NONE
+highlight String guifg=#A4E5F3 guibg=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
 highlight Special guifg=#ffff guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight Conditional guifg=#ffff guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight Operator guifg=#ffff guibg=NONE gui=NONE ctermfg=246 ctermbg=NONE cterm=NONE
@@ -113,13 +116,13 @@ highlight VimCommentTitle guifg=#767676 guibg=NONE gui=reverse ctermfg=243 cterm
 highlight Underlined guifg=#87afaf guibg=NONE gui=NONE ctermfg=109 ctermbg=NONE cterm=NONE
 highlight FoldColumn guifg=#87afaf guibg=NONE gui=NONE ctermfg=109 ctermbg=NONE cterm=NONE
 highlight Todo guifg=#dfaf00 guibg=NONE gui=reverse ctermfg=172 ctermbg=NONE cterm=reverse
-highlight Visual guifg=#6ef8be guibg=NONE gui=reverse ctermfg=178 ctermbg=NONE cterm=reverse
+highlight Visual guifg=#A4E5F3 guibg=NONE gui=reverse ctermfg=178 ctermbg=NONE cterm=reverse
 highlight Question guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
-highlight Search guifg=#6ef8be guibg=NONE gui=reverse ctermfg=178 ctermbg=NONE cterm=reverse
+highlight Search guifg=#A4E5F3 guibg=NONE gui=reverse ctermfg=178 ctermbg=NONE cterm=reverse
 highlight MatchParen guifg=#87afaf guibg=NONE gui=reverse ctermfg=109 ctermbg=NONE cterm=reverse
 highlight Error guifg=#d75f5f guibg=#121212 gui=reverse ctermfg=167 ctermbg=233 cterm=reverse
 highlight ErrorMsg guifg=#d75f5f guibg=NONE gui=NONE ctermfg=167 ctermbg=NONE cterm=NONE
-highlight WarningMsg guifg=#6ef8be guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
+highlight WarningMsg guifg=#FAAAD7 guibg=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
 highlight netrwExe guifg=#5f8787 guibg=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE
 highlight netrwlist guifg=#875f5f guibg=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 highlight Directory guifg=#af875f guibg=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
@@ -161,7 +164,7 @@ if 1
 	highlight SpecialKey guifg=#444444 guibg=NONE gui=NONE ctermfg=238 ctermbg=NONE cterm=NONE
 endif
 
-if g:ghoul_gray
+if g:cottoncandy_gray
 	"COLORS
 	highlight Normal guifg=#ffffdf guibg=#1c1c1c gui=NONE ctermfg=230 ctermbg=234 cterm=NONE
 	highlight Comment guifg=#4e4e4e guibg=NONE gui=NONE ctermfg=239 ctermbg=NONE cterm=NONE
